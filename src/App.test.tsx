@@ -24,8 +24,8 @@ const render = (
   renderRTL(ui, { wrapper: AllTheProviders, ...options });
 };
 
-test("renders learn react link", () => {
+test("renders react home page", () => {
   render(<App />);
-  const title = screen.getByText(/Hello world/i);
+  const title = screen.getByText(/Welcome to our upload page/i);
   expect(title).toBeInTheDocument();
 });

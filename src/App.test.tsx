@@ -27,5 +27,6 @@ const render = (
 test("renders react home page", () => {
   render(<App />);
   const title = screen.getByText(/Welcome to our upload page/i);
+
   expect(title).toBeInTheDocument();
 });

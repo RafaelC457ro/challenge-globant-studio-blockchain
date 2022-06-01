@@ -76,16 +76,19 @@ export function useParsedFiles(files: FileWithPath[]): useParsedFilesReturn {
   const [data, setData] = useState<IRecord[]>([]);
 
   useEffect(() => {
-    setIsLoading(true);
-    processFiles(files).then((d) => {
-      for (const record of d) {
-        if (!record?.error) {
-          addRecord(record);
+    if (files.length > 0) {
+      setIsLoading(true);
+      processFiles(files).then((result) => {
+        for (const record of result) {
+          if (!record?.error) {
+            addRecord(record);
+          }
         }
-      }
-      setData(d);
-      setIsLoading(false);
-    });
+
+        setData(result);
+        setIsLoading(false);
+      });
+    }
   }, [files]);
 
   return { isLoading, records: data };

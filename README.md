@@ -15,3 +15,9 @@ nvm use
 
 npm start
 ```
+
+## how to test
+
+```bash
+npm test
+```

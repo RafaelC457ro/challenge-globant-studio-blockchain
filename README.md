@@ -1,5 +1,7 @@
 # Challenge Globant | Studio Blockchain - Frontend
 
+You can access this challenge in this URL: https://challenge-globant-studio-blockchain.netlify.app/
+
 ## how to start
 
 make sure you have the following dependencies installed:

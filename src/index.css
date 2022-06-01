@@ -12,5 +12,5 @@ body {
 }
 
 main {
-  height: calc(100% - 128px); /* 128px is the height of the header */
+  min-height: calc(100% - 128px); /* 128px is the height of the header */
 }

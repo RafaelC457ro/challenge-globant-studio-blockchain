@@ -2,7 +2,7 @@ import { Dropzone } from "../../components";
 
 export function Home() {
   return (
-    <div className="container mx-auto py-16 flex flex-col">
+    <div className="container mx-auto py-10 flex flex-col">
       <h2 className="text-3xl font-bold text-emerald-600">
         Welcome to our upload page
       </h2>

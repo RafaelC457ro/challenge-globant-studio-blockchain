@@ -6,7 +6,9 @@ export function Header() {
       <div className="bg-emerald-600 py-5 w-full">
         <div className="container mx-auto flex space-x-5">
           <div id="Logo">
-            <h1 className="text-white font-extrabold">Challenge</h1>
+            <Link to="/" className="text-white font-extrabold">
+              Challenge
+            </Link>
           </div>
           <nav>
             <ul className="flex flex-row space-x-3">
